@@ -5,6 +5,7 @@
 #include <string.h>
 #include <math.h>
 #include <unistd.h>
+#include <local.h>
 #include <android/log.h>
 
 #if (ENABLE_ANDROID_LOGGING == 0)
