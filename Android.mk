@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter $(TARGET_DEVICE), shieldtablet foster loki hawkeye falcon roth),)
+ifneq ($(filter $(TARGET_DEVICE), shieldtablet foster loki hawkeye falcon roth jetson-tk1 jetson-tx1),)
 
 LOCAL_PATH := $(call my-dir)
 
