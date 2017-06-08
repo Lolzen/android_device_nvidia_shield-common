@@ -40,17 +40,6 @@ allow bluetooth bluetooth_log_file:dir { write search add_name };
 # Access storage_stub_file
 allow bluetooth storage_stub_file:dir getattr;
 
-# Allow socket creation & set options
-allow bluetooth self:socket create;
-allow bluetooth self:socket setopt;
-
-# Allow usb bus & ioctl write
-allow bluetooth sysfs_bus_usb:file write;
-allow bluetooth self:socket { ioctl write };
-
-# Allow bluetooth socket bind
-allow bluetooth self:socket bind;
-allow bluetooth self:socket read;
 
 
 

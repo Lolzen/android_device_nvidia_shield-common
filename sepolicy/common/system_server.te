@@ -122,5 +122,3 @@ allow system_server debugfs_cluster:file rw_file_perms;
 # allow system_server to search keylayout_data_file
 allow system_server keylayout_data_file:dir search;
 
-# allow unlabeled unlink
-allow system_server unlabeled:file unlink;
