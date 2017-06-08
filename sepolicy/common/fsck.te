@@ -14,3 +14,4 @@
 
 allow fsck rpx_block_device:blk_file rw_file_perms;
 allow fsck usercalib_block_device:blk_file rw_file_perms;
+allow fsck self:capability { dac_override dac_read_search };
