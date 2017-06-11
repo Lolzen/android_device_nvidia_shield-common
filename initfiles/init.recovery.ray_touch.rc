@@ -18,4 +18,8 @@ on init
     mkdir /mnt/factory 0666 system system
 
 #Raydium touch setting
-service rm-runner    /sbin/rm-runner.sh
+service rm-wrapper    /sbin/rm-wrapper
+    setenv TOUCH_CONF_DIR /mnt/factory/touchscreen
+    setenv TOUCH_DATA_DIR /data/touchscreen
+    setenv LD_LIBRARY_PATH /system/lib:/system/lib/hw
+    seclabel u:r:raydium:s0
