@@ -8,4 +8,5 @@ LOCAL_CFLAGS := -fPIE
 LOCAL_LDFLAGS := -fPIE -pie -ldl -llog -Wl,-dynamic-linker,/sbin/linker
 LOCAL_C_INCLUDES := $(ANDROID_BUILD_TOP)/bionic/libc/stdio
 LOCAL_SHARED_LIBRARIES := libc libdl liblog libm libstdc++
+LOCAL_MULTILIB := 32
 include $(BUILD_EXECUTABLE)
