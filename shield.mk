@@ -93,6 +93,12 @@ ifneq ($(TARGET_TEGRA_VERSION),t114)
 	                      frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version.xml
 endif
 
+# Addition ATV Apps
+ifeq ($(PRODUCT_IS_ATV),true)
+	PRODUCT_PACKAGES += AppDrawer \
+	                    LineageShieldCustomizer
+endif
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
