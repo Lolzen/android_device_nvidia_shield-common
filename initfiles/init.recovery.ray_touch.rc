@@ -17,9 +17,13 @@ on init
     mkdir /mnt 0666 system system
     mkdir /mnt/factory 0666 system system
 
+on boot
+    start rm-wrapper
+
 #Raydium touch setting
 service rm-wrapper    /sbin/rm-wrapper
     setenv TOUCH_CONF_DIR /mnt/factory/touchscreen
     setenv TOUCH_DATA_DIR /data/touchscreen
     setenv LD_LIBRARY_PATH /system/lib:/system/lib/hw
     seclabel u:r:raydium:s0
+    disabled
