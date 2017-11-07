@@ -175,9 +175,7 @@ PRODUCT_PACKAGES += libwvm_shim
 
 # Wifi
 # All Shield devices currently use broadcom wifi / bluetooth modules
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/comms/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    hardware/broadcom/wlan/bcmdhd/config/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
 PRODUCT_PACKAGES += \
     hostapd \
