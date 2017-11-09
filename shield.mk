@@ -170,6 +170,9 @@ ifeq ($(TARGET_TEGRA_VERSION),t210)
 	PRODUCT_PACKAGES += pbc.conf
 endif
 
+# Widevine shim
+PRODUCT_PACKAGES += libwvm_shim
+
 # Wifi
 # All Shield devices currently use broadcom wifi / bluetooth modules
 PRODUCT_COPY_FILES += \
