@@ -5,7 +5,6 @@
 
 #include "init_shield.h"
 #include "init.h"
-#include "vendor_init.h"
 #include "property_service.h"
 #include "util.h"
 
