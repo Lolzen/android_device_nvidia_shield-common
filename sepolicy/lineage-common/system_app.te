@@ -13,3 +13,5 @@
 # limitations under the License.
 
 allow system_app sysfs_mmc_host:file r_file_perms;
+
+allow system_app wificond:binder call;
