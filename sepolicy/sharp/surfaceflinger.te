@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (c) 2016, NVIDIA CORPORATION.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# /sys/devices/platform/pwm-backlight.*
-type sysfs_pwm_backlight, fs_type, sysfs_type;
-
-# /data/gps
-type gps_data_file, file_type, data_file_type;
-type gps_socket, file_type;
+allow surfaceflinger sysfs_slowscan:file { open write };
