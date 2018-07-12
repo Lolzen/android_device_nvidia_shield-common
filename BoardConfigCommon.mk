@@ -16,6 +16,7 @@
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/nvidia/shield-common/sepolicy/common \
+                       device/nvidia/shield-common/sepolicy/lineage-common \
                        vendor/omni/sepolicy
 
 ifneq ($(filter $(TARGET_TEGRA_MODEM),icera),)
